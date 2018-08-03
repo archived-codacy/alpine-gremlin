@@ -1,4 +1,4 @@
-FROM anapsix/alpine-java
+FROM anapsix/alpine-java:3.7
 
 MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
 
