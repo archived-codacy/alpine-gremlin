@@ -2,4 +2,4 @@
 
 # Build exakat docker
 
-docker build -f Dockerfile -t codacy/alpine-gremlin:latest .
+docker build -f Dockerfile -t exakat/gremlin:latest .

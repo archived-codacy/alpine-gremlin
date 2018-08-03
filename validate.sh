@@ -1,6 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-[ -d /tinkergraph/ext/neo4j-gremlin ]
-[ -d /tinkergraph/ext/gremlin-groovy ]
-[ -d /tinkergraph/ext/tinkergraph-gremlin ]
-[ -f /tinkergraph/conf/gsneo4j.3.3.yml ]
+set -e
+
+echo "====> Checking if docker built successfully"
+echo "=====> Checking if neo4j-gremlin exists"
+test -d /tinkergraph/ext/neo4j-gremlin
+echo "=====> Checking if gremlin-groovy exists"
+test -d /tinkergraph/ext/gremlin-groovy
+echo "=====> Checking if tinkergraph-gremlin exists"
+test -d /tinkergraph/ext/tinkergraph-gremlin

@@ -1,11 +1,11 @@
-FROM anapsix/alpine-java
+FROM anapsix/alpine-java:8
 
 MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
 
 ENV GREMLIN_VERSION 3.3.3
 
 COPY grapeConfig.xml /root/.groovy/grapeConfig.xml
-COPY validate.sh /root
+COPY validate.sh /validate.sh
 
 RUN \
     echo "===> Setup PHP" \
@@ -25,6 +25,7 @@ RUN \
     && rm -rf javadocs \
     && rm -rf docs \
     && cd .. \
-    && /bin/bash ./validate.sh
+    && /validate.sh
+
 
 CMD ["cp", "-avr", "/tinkergraph", "/mnt/"]
