@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-# Build exakat docker
+# Build alpine-gremlin docker
 
-docker build -f Dockerfile -t exakat/gremlin:latest .
+docker build -f Dockerfile -t codacy/alpine-gremlin:latest .
