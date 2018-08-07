@@ -7,9 +7,7 @@ This docker is built and used as base of [Codacy-Exakat](https://github.com/coda
 
 You can build the docker by doing:
 
-    ```
     ./build.sh
-    ```
 
 ## What is Codacy
 
